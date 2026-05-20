@@ -1,0 +1,49 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/vDevPreview/MicrosoftTeams.schema.json",
+  "manifestVersion": "devPreview",
+  "version": "1.0.0",
+  "id": "fbce251d-e23b-4209-a7de-53d569a05bee",
+  "packageName": "com.microsoft.manufacturing.opsAgent",
+  "developer": {
+    "name": "Microsoft Manufacturing SE Team",
+    "websiteUrl": "https://microsoft.com",
+    "privacyUrl": "https://privacy.microsoft.com/en-us/privacystatement",
+    "termsOfUseUrl": "https://www.microsoft.com/en-us/legal/terms-of-use"
+  },
+  "name": {
+    "short": "Manufacturing Ops",
+    "full": "Manufacturing Operations Cowork Plugin"
+  },
+  "description": {
+    "short": "Plant-floor skills for production, capacity, quality, and compliance work.",
+    "full": "A Copilot Cowork plugin that equips plant managers, production supervisors, and quality engineers with seven manufacturing-ops skills: daily status reporting, capacity planning, SOP and process documentation, shift handoff and line-down runbooks, engineering and process change requests, multi-domain risk assessment, and compliance audit prep across OSHA, ISO 9001, IATF 16949, FDA 21 CFR, and GMP."
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "accentColor": "#0078D4",
+  "agentSkills": [
+    {
+      "folder": "./skills/status-report"
+    },
+    {
+      "folder": "./skills/capacity-plan"
+    },
+    {
+      "folder": "./skills/process-doc"
+    },
+    {
+      "folder": "./skills/runbook"
+    },
+    {
+      "folder": "./skills/change-request"
+    },
+    {
+      "folder": "./skills/risk-assessment"
+    },
+    {
+      "folder": "./skills/compliance-tracking"
+    }
+  ]
+}

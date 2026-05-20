@@ -1,0 +1,46 @@
+{
+  "$schema": "https://aka.ms/json-schemas/copilot/plugin/v1.0/schema.json",
+  "name": "Manufacturing Ops Agent",
+  "description": "AI-powered manufacturing operations assistant for plant floor management, production reporting, capacity planning, compliance tracking, and more.",
+  "instructions": "$[file('instructions/system-prompt.md')]",
+  "conversation_starters": [
+    {
+      "title": "Daily Production Status Report",
+      "text": "Generate a daily production status report for today's shift. Include production output vs. target, downtime events, quality metrics (first pass yield, scrap rate), safety incidents, and key actions for the next shift. Format it for plant leadership review."
+    },
+    {
+      "title": "Capacity Plan Analysis",
+      "text": "Help me build a capacity plan analysis. I need to evaluate current line/load balance, identify labor and machine bottleneck constraints, and review capacity utilization rates. Include recommendations for addressing any constraints found."
+    },
+    {
+      "title": "Create Process Document",
+      "text": "Help me create a process document. I need to develop a standard operating procedure (SOP) with step-by-step work instructions, required PPE, quality checkpoints, and escalation paths for non-conformances."
+    },
+    {
+      "title": "Shift Handoff Runbook",
+      "text": "Generate a shift handoff runbook for the current shift transition. Include production status by line, open quality holds, equipment issues, pending line-down responses, safety alerts, and priority actions for the incoming shift."
+    },
+    {
+      "title": "Engineering Change Request",
+      "text": "Help me draft an engineering change request (ECR). I need to document the change type (engineering/tooling/process/line changeover), impact assessment, required approvals, validation steps, and implementation timeline."
+    },
+    {
+      "title": "Risk Assessment",
+      "text": "Conduct a risk assessment triage covering safety, quality, supplier, production, and delivery risks. Use a severity/likelihood matrix to prioritize risks and recommend mitigation actions for the highest-priority items."
+    },
+    {
+      "title": "Compliance Audit Prep",
+      "text": "Help me prepare for a compliance audit. Identify which standards apply to our operation (OSHA, ISO 9001, IATF 16949, FDA, GMP) and generate a readiness checklist with gap analysis for the upcoming customer or regulatory audit."
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "OneDriveAndSharePoint",
+      "items_by_url": [
+        {
+          "url": "https://microsoft.sharepoint.com/sites/ManufacturingOps"
+        }
+      ]
+    }
+  ]
+}

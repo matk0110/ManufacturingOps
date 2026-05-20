@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/vDevPreview/MicrosoftTeams.schema.json",
+  "manifestVersion": "devPreview",
+  "version": "1.0.0",
+  "id": "fbce251d-e23b-4209-a7de-53d569a05bee",
+  "developer": {
+    "name": "Microsoft Manufacturing SE Team",
+    "websiteUrl": "https://microsoft.com",
+    "privacyUrl": "https://privacy.microsoft.com/en-us/privacystatement",
+    "termsOfUseUrl": "https://www.microsoft.com/en-us/legal/terms-of-use"
+  },
+  "name": {
+    "short": "Manufacturing Ops",
+    "full": "Manufacturing Operations Copilot Agent"
+  },
+  "description": {
+    "short": "AI-powered manufacturing operations assistant for plant floor management",
+    "full": "A comprehensive manufacturing operations agent that helps plant managers, production supervisors, and quality engineers with daily production reviews, capacity planning, process documentation, shift handoff runbooks, engineering change requests, risk assessments, and compliance tracking across OSHA, ISO 9001, IATF 16949, FDA, and GMP standards."
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "accentColor": "#0078D4",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "manufacturingOpsAgent",
+        "file": "declarativeAgent.json"
+      }
+    ]
+  },
+  "permissions": [
+    "messageTeamMembers"
+  ],
+  "validDomains": []
+}
